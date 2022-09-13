@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API del clima</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div>
+        <nav><img src="img/bicicleta.png" alt=""></nav>
+
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div>
+                    <br><br>
+                    <div class="row center">
+                        <h1 class="header center teal-text text-lighten-2">Alquiler de bicicletas</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="caja1 container row">
+
+            <div class="caracteristicasDelClima">
+
+                <div id="hora"></div>
+                <div id="fecha"></div>
+                <div id="caracteristicasDelClima"></div>
+            </div>
+            <div class="caracteristicasDelLugar">
+                <div id="pais"></div>
+                <div id="latlon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="caja2 container row">
+        <div class="temperaturaActual col s4" id="temperaturaActual">
+        </div>
+
+        <div class="temperaturaSemanal col s6" id="pronostico">
+        </div>
+    </div>
+
+    <div>
+        <img src="img/bike-.jpg" class="banner" alt="">
+    </div>
+
+    <div class="parallax-container index-banner">
+        <div class="section no-pad-bot">
+            <div class="">
+                <br><br>
+                <div class="row center">
+                    <h5 class="header col s12 light">Ciudades en donde ofrecemos nuestros servicios:</h5>
+                </div>
+
+                <div id="dinamismo">
+                    <label for="ciudades"></label>
+                    <select name="ciudades" id="ciudades">
+
+                        
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="informacionSobreCiudades">
+
+
+
+    </div>
+
+
+
+    <footer class="page-footer">
+        <p class="container">Copyright © 2022 Inc - Clara Martín. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"></script>
+    <script src="codigo.js"></script>
+</body>
+
+</html>
